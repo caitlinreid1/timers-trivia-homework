@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 var interval = setInterval(count, 1000);
-	var x = 3;
+	var x = 31;
 
 	function count() {
     // document.getElementById("countdownDOM").innerHTML = --i;
@@ -27,18 +27,18 @@ var totalquestions=5
 
 //Enter the solutions corresponding to each question:
 var correctchoices=new Array()
-correctchoices[1]='c' //question 1 solution
-correctchoices[2]='a' //question 2 solution, and so on.
+correctchoices[1]='b' //question 1 solution
+correctchoices[2]='d' //question 2 solution, and so on.
 correctchoices[3]='c'
 correctchoices[4]='c'
 correctchoices[5]='c'
 
 
-/////Don't edit beyond here//////////////////////////
+
 
 function gradeit(){
 var incorrect=null
-for (q=1;q<=totalquestions;q++){
+for (i=1;i<=totalquestions;i++){
 	var thequestion=eval("document.myquiz.question"+q)
 	for (c=0;c<thequestion.length;c++){
 		if (thequestion[c].checked==true)
